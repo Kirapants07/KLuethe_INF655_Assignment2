@@ -9,7 +9,7 @@ function App() {
 
   const addToDo = (newTask) => {
     const listCopy = [...taskList];
-    listCopy.push({id: taskList.length + 1, title: newTask, description: ""});
+    listCopy.push({id: taskList.length + 1, title: "", description: newTask});
     setTaskList(listCopy);
 }
 
